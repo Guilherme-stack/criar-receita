@@ -1,5 +1,10 @@
+body{
+  font-family: "Poppins";
+}
 .App {
   text-align: center;
+  width: 800px;
+  margin: auto;
 }
 
 .App-logo {
@@ -36,3 +41,116 @@
     transform: rotate(360deg);
   }
 }
+
+.nome-receita{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: 50px;
+}
+.medidas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;
+  grid-gap: 10px;
+}
+.medidas {
+  height: 30px !important;
+  animation: mercury .7s linear;
+}
+ 
+.receita input {
+	height: 40px;
+	text-align: center;
+	font-family: "Poppins";
+	border: 2px solid pink;
+  border-radius: 0px;
+}
+
+.receita input:focus{
+  border: 2px solid pink;
+}
+
+.adicionar {
+  height: 100%;
+}
+.adicionar button{
+  background-color: pink;
+  border-radius: 0px;
+  border: 1px solid #fff;
+  padding: 10px 50px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+   
+  cursor: pointer;
+  height: 100%;
+}
+.add-ingrediente{
+  color: rgb(255, 100, 126);
+  border: 2px solid rgb(255, 100, 126);
+  background-color: #fff;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+}
+.inf{
+   position: relative;
+margin-bottom: 10px;
+  animation: mercury .5s linear;
+}
+.inf-n{
+ 
+  transition: 0.7s;
+}
+
+@keyframes mercury {
+	from {
+		margin-bottom: -20px;
+    opacity: 0;
+	} to {
+		margin-bottom: 10px;
+    opacity: 1;
+	}
+}
+ 
+.none{
+  display: none;
+  transition: 1s linear;
+}
+
+.sumir{
+  opacity: 0;
+  margin: 40px 0 0 !important;
+  transition: .5s linear;
+  
+  
+}
+.mostrar{
+  opacity: 1;
+  margin:  -20px 0 0 !important;
+  transition: .5s linear;
+}
+.fechar{
+  background: red;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+.apagar{
+  background: #fff;
+  color: red;
+  border: 2px solid red;
+  padding: 5px 15px;
+  float: right;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+} 
+
+ul{
+  list-style: none;
+}
+ 
